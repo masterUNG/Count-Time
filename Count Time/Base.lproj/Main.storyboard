@@ -1,26 +1,81 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Count_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMB-iH-pMg">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Count Time" id="UBd-hD-Ycp">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="pause" id="8Wf-Ss-C7v">
+                                            <connections>
+                                                <action selector="pauseAction:" destination="BYZ-38-t0r" id="r6D-kK-GcV"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="UDi-ra-ZuQ">
+                                            <connections>
+                                                <action selector="playAction:" destination="BYZ-38-t0r" id="CJ3-vB-DvU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNh-wF-DUP">
+                                <rect key="frame" x="146.66666666666663" y="249" width="121.33333333333337" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-aB-d2Q">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="3xW-YP-HMC"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SFG-ym-Xeg"/>
+                                    <barButtonItem title="Zero" id="J6s-kk-8c3"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YwB-6e-BhG"/>
+                                    <barButtonItem image="ic_remove.png" id="UVt-LX-eDI"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jNh-wF-DUP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ay8-1d-iJ2"/>
+                            <constraint firstItem="IMB-iH-pMg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bfm-5R-Xb2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hRe-aB-d2Q" secondAttribute="bottom" id="Tsx-sh-OB3"/>
+                            <constraint firstItem="IMB-iH-pMg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ZX3-Er-3mW"/>
+                            <constraint firstItem="jNh-wF-DUP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cd6-ZK-IEL"/>
+                            <constraint firstAttribute="trailing" secondItem="hRe-aB-d2Q" secondAttribute="trailing" id="fYh-Ti-YPc"/>
+                            <constraint firstAttribute="trailing" secondItem="IMB-iH-pMg" secondAttribute="trailing" id="teX-Ia-EKz"/>
+                            <constraint firstItem="hRe-aB-d2Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xsi-Ua-LrM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="jNh-wF-DUP" id="MvG-Ug-PZ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_remove.png" width="24" height="24"/>
+    </resources>
 </document>

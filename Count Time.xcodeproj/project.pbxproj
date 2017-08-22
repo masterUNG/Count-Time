@@ -12,6 +12,9 @@
 		C48F997F1F4B4CEA001D73CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48F997D1F4B4CEA001D73CF /* Main.storyboard */; };
 		C48F99811F4B4CEA001D73CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48F99801F4B4CEA001D73CF /* Assets.xcassets */; };
 		C48F99841F4B4CEA001D73CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48F99821F4B4CEA001D73CF /* LaunchScreen.storyboard */; };
+		C48F998E1F4B79E8001D73CF /* ic_remove_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48F998B1F4B79E8001D73CF /* ic_remove_2x.png */; };
+		C48F998F1F4B79E8001D73CF /* ic_remove_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C48F998C1F4B79E8001D73CF /* ic_remove_3x.png */; };
+		C48F99901F4B79E8001D73CF /* ic_remove.png in Resources */ = {isa = PBXBuildFile; fileRef = C48F998D1F4B79E8001D73CF /* ic_remove.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C48F99801F4B4CEA001D73CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C48F99831F4B4CEA001D73CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C48F99851F4B4CEA001D73CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48F998B1F4B79E8001D73CF /* ic_remove_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_remove_2x.png; sourceTree = "<group>"; };
+		C48F998C1F4B79E8001D73CF /* ic_remove_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_remove_3x.png; sourceTree = "<group>"; };
+		C48F998D1F4B79E8001D73CF /* ic_remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_remove.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				C48F997B1F4B4CEA001D73CF /* ViewController.swift */,
 				C48F997D1F4B4CEA001D73CF /* Main.storyboard */,
 				C48F99801F4B4CEA001D73CF /* Assets.xcassets */,
+				C48F998B1F4B79E8001D73CF /* ic_remove_2x.png */,
+				C48F998C1F4B79E8001D73CF /* ic_remove_3x.png */,
+				C48F998D1F4B79E8001D73CF /* ic_remove.png */,
 				C48F99821F4B4CEA001D73CF /* LaunchScreen.storyboard */,
 				C48F99851F4B4CEA001D73CF /* Info.plist */,
 			);
@@ -124,8 +133,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C48F99841F4B4CEA001D73CF /* LaunchScreen.storyboard in Resources */,
+				C48F998E1F4B79E8001D73CF /* ic_remove_2x.png in Resources */,
+				C48F998F1F4B79E8001D73CF /* ic_remove_3x.png in Resources */,
 				C48F99811F4B4CEA001D73CF /* Assets.xcassets in Resources */,
 				C48F997F1F4B4CEA001D73CF /* Main.storyboard in Resources */,
+				C48F99901F4B79E8001D73CF /* ic_remove.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
